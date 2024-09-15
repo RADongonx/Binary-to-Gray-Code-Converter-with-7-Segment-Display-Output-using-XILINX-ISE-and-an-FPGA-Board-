@@ -1,0 +1,130 @@
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/DOE/BINARYTOGRAY.xst" -ofn "C:/Xilinx/DOE/BINARYTOGRAY.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BINARYTOGRAY.ucf -p xc3s500e-ft256-4 BINARYTOGRAY.ngc BINARYTOGRAY.ngd  
+map -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o BINARYTOGRAY_map.ncd BINARYTOGRAY.ngd BINARYTOGRAY.pcf 
+par -w -intstyle ise -ol high -t 1 BINARYTOGRAY_map.ncd BINARYTOGRAY.ncd BINARYTOGRAY.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf 
+bitgen -intstyle ise -f BINARYTOGRAY.ut BINARYTOGRAY.ncd 

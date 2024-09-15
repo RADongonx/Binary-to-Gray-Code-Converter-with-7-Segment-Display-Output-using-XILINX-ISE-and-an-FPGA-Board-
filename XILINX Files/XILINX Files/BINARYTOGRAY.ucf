@@ -1,0 +1,22 @@
+
+#Created by Constraints Editor (xc3s500e-ft256-4) - 2023/10/17
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50 %;
+
+
+NET "binary[0]" LOC = J12;
+NET "clk" LOC = B8;
+NET "rst" LOC = J11;
+NET "seven_segment[0]" LOC = E3;
+NET "seven_segment[1]" LOC = E1;
+NET "seven_segment[2]" LOC = G5;
+NET "seven_segment[3]" LOC = D1;
+NET "seven_segment[4]" LOC = E4;
+NET "seven_segment[5]" LOC = C1;
+NET "seven_segment[6]" LOC = C2;
+
+# PlanAhead Generated physical constraints 
+
+NET "binary[1]" LOC = H16;
+NET "binary[2]" LOC = H13;
+NET "binary[3]" LOC = G12;

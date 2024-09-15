@@ -1,0 +1,285 @@
+--------------------------------------------------------------------------------
+Release 13.1 Trace  (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml BINARYTOGRAY.twx BINARYTOGRAY.ncd -o BINARYTOGRAY.twr
+BINARYTOGRAY.pcf -ucf BINARYTOGRAY.ucf
+
+Design file:              BINARYTOGRAY.ncd
+Physical constraint file: BINARYTOGRAY.pcf
+Device,package,speed:     xc3s500e,ft256,-4 (PRODUCTION 1.27 2011-02-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+
+ 28 paths analyzed, 28 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.613ns.
+--------------------------------------------------------------------------------
+
+Paths for end point seven_segment_3 (SLICE_X22Y69.G2), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     15.387ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               gray_reg_1 (FF)
+  Destination:          seven_segment_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.609ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.004ns (0.089 - 0.093)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: gray_reg_1 to seven_segment_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y56.YQ      Tcko                  0.587   gray_reg<0>
+                                                       gray_reg_1
+    SLICE_X22Y69.G2      net (fanout=7)        3.130   gray_reg<1>
+    SLICE_X22Y69.CLK     Tgck                  0.892   seven_segment_3
+                                                       Mrom_seven_segment_mux000031
+                                                       seven_segment_3
+    -------------------------------------------------  ---------------------------
+    Total                                      4.609ns (1.479ns logic, 3.130ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point seven_segment_2 (SLICE_X22Y60.G1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     15.389ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               gray_reg_1 (FF)
+  Destination:          seven_segment_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.606ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.005ns (0.088 - 0.093)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: gray_reg_1 to seven_segment_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y56.YQ      Tcko                  0.587   gray_reg<0>
+                                                       gray_reg_1
+    SLICE_X22Y60.G1      net (fanout=7)        3.127   gray_reg<1>
+    SLICE_X22Y60.CLK     Tgck                  0.892   seven_segment_2
+                                                       Mrom_seven_segment_mux0000211
+                                                       seven_segment_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.606ns (1.479ns logic, 3.127ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point seven_segment_0 (SLICE_X23Y72.G1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     15.622ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               gray_reg_1 (FF)
+  Destination:          seven_segment_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.378ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: gray_reg_1 to seven_segment_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y56.YQ      Tcko                  0.587   gray_reg<0>
+                                                       gray_reg_1
+    SLICE_X23Y72.G1      net (fanout=7)        2.954   gray_reg<1>
+    SLICE_X23Y72.CLK     Tgck                  0.837   seven_segment_1
+                                                       Mrom_seven_segment_mux000012
+                                                       seven_segment_0
+    -------------------------------------------------  ---------------------------
+    Total                                      4.378ns (1.424ns logic, 2.954ns route)
+                                                       (32.5% logic, 67.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point seven_segment_1 (SLICE_X23Y72.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      2.341ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               gray_reg_2 (FF)
+  Destination:          seven_segment_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.358ns (Levels of Logic = 1)
+  Clock Path Skew:      0.017ns (0.107 - 0.090)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: gray_reg_2 to seven_segment_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y59.YQ      Tcko                  0.470   gray_reg<3>
+                                                       gray_reg_2
+    SLICE_X23Y72.F3      net (fanout=7)        1.372   gray_reg<2>
+    SLICE_X23Y72.CLK     Tckf        (-Th)    -0.516   seven_segment_1
+                                                       Mrom_seven_segment_mux0000111
+                                                       seven_segment_1
+    -------------------------------------------------  ---------------------------
+    Total                                      2.358ns (0.986ns logic, 1.372ns route)
+                                                       (41.8% logic, 58.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point seven_segment_0 (SLICE_X23Y72.G3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      2.368ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               gray_reg_2 (FF)
+  Destination:          seven_segment_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.385ns (Levels of Logic = 1)
+  Clock Path Skew:      0.017ns (0.107 - 0.090)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: gray_reg_2 to seven_segment_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y59.YQ      Tcko                  0.470   gray_reg<3>
+                                                       gray_reg_2
+    SLICE_X23Y72.G3      net (fanout=7)        1.399   gray_reg<2>
+    SLICE_X23Y72.CLK     Tckg        (-Th)    -0.516   seven_segment_1
+                                                       Mrom_seven_segment_mux000012
+                                                       seven_segment_0
+    -------------------------------------------------  ---------------------------
+    Total                                      2.385ns (0.986ns logic, 1.399ns route)
+                                                       (41.3% logic, 58.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point seven_segment_0 (SLICE_X23Y72.G2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      2.375ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               gray_reg_3 (FF)
+  Destination:          seven_segment_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.392ns (Levels of Logic = 1)
+  Clock Path Skew:      0.017ns (0.107 - 0.090)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: gray_reg_3 to seven_segment_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y59.XQ      Tcko                  0.473   gray_reg<3>
+                                                       gray_reg_3
+    SLICE_X23Y72.G2      net (fanout=7)        1.403   gray_reg<3>
+    SLICE_X23Y72.CLK     Tckg        (-Th)    -0.516   seven_segment_1
+                                                       Mrom_seven_segment_mux000012
+                                                       seven_segment_0
+    -------------------------------------------------  ---------------------------
+    Total                                      2.392ns (0.989ns logic, 1.403ns route)
+                                                       (41.3% logic, 58.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: gray_reg<3>/SR
+  Logical resource: gray_reg_3/SR
+  Location pin: SLICE_X45Y59.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 1.596ns (Trpw)
+  Physical resource: gray_reg<3>/SR
+  Logical resource: gray_reg_3/SR
+  Location pin: SLICE_X45Y59.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: gray_reg<3>/SR
+  Logical resource: gray_reg_2/SR
+  Location pin: SLICE_X45Y59.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.613|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 28 paths, 0 nets, and 36 connections
+
+Design statistics:
+   Minimum period:   4.613ns{1}   (Maximum frequency: 216.779MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Oct 27 14:24:42 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 153 MB
+
+
+

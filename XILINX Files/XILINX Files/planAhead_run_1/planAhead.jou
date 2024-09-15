@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1 (64-bit)
+# Build 117799 by hdbuild on Thu Feb 17 11:42:17 PST 2011
+# Start of session at: Fri Oct 27 12:17:11 2023
+# Process ID: 2148
+# Log file: C:/Xilinx/DOE/planAhead_run_1/planAhead.log
+# Journal file: C:/Xilinx/DOE/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Xilinx/DOE/pa.fromNetlist.tcl
+set_property loc "" [get_ports {binary[1]}]
+set_property loc "" [get_ports {binary[2]}]
+set_property loc "" [get_ports {binary[3]}]
+startgroup
+set_property loc IPAD93 [get_ports {binary[0]}]
+endgroup
+startgroup
+set_property loc IPAD88 [get_ports {binary[1]}]
+endgroup
+startgroup
+set_property loc IPAD83 [get_ports {binary[2]}]
+endgroup
+startgroup
+set_property loc IPAD98 [get_ports rst]
+endgroup
+startgroup
+set_property loc IPAD78 [get_ports {binary[3]}]
+endgroup
+save_design
+exit

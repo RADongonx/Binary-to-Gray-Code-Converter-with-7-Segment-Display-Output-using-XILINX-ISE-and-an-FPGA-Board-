@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Compat Version="1" Minor="4">
+	<CompatParts>
+	</CompatParts>
+	<ConfigModes>
+	</ConfigModes>
+	<PortProps>
+		<Port Name="seven_segment[6]"/>
+		<Port Name="seven_segment[5]"/>
+		<Port Name="seven_segment[4]"/>
+		<Port Name="seven_segment[3]"/>
+		<Port Name="seven_segment[2]"/>
+		<Port Name="seven_segment[1]"/>
+		<Port Name="seven_segment[0]"/>
+		<Port Name="binary[3]"/>
+		<Port Name="binary[2]"/>
+		<Port Name="binary[1]"/>
+		<Port Name="binary[0]"/>
+		<Port Name="clk"/>
+		<Port Name="rst"/>
+	</PortProps>
+</Compat>
+

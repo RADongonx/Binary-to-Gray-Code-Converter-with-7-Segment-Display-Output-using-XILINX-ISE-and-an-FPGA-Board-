@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map O.40d on Fri Oct 27 14:24:26 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "binary<0>" LOCATE = SITE "J12" LEVEL 1;
+COMP "binary<1>" LOCATE = SITE "H16" LEVEL 1;
+COMP "binary<2>" LOCATE = SITE "H13" LEVEL 1;
+COMP "binary<3>" LOCATE = SITE "G12" LEVEL 1;
+COMP "seven_segment<0>" LOCATE = SITE "E3" LEVEL 1;
+COMP "seven_segment<1>" LOCATE = SITE "E1" LEVEL 1;
+COMP "seven_segment<2>" LOCATE = SITE "G5" LEVEL 1;
+COMP "seven_segment<3>" LOCATE = SITE "D1" LEVEL 1;
+COMP "seven_segment<4>" LOCATE = SITE "E4" LEVEL 1;
+COMP "seven_segment<5>" LOCATE = SITE "C1" LEVEL 1;
+COMP "seven_segment<6>" LOCATE = SITE "C2" LEVEL 1;
+COMP "rst" LOCATE = SITE "J11" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "gray_reg_0" BEL "gray_reg_1" BEL "gray_reg_2" BEL
+        "gray_reg_3" BEL "seven_segment_0" BEL "seven_segment_1" BEL
+        "seven_segment_3" BEL "seven_segment_4" BEL "seven_segment_5" BEL
+        "seven_segment_2" BEL "seven_segment_6" BEL "clk_BUFGP/BUFG.GCLKMUX"
+        BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

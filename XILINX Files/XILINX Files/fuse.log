@@ -1,0 +1,12 @@
+Running: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Xilinx/DOE/TESTBENCH_isim_beh.exe -prj C:/Xilinx/DOE/TESTBENCH_beh.prj work.TESTBENCH work.glbl 
+ISim O.40d (signature 0xc4ca3437)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file \"C:/Xilinx/DOE/BINARYTOGRAY.v\" into library work
+ERROR:HDLCompiler:1660 - "C:/Xilinx/DOE/BINARYTOGRAY.v" Line 36: Procedural assignment to a non-register gray_output is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:1660 - "C:/Xilinx/DOE/BINARYTOGRAY.v" Line 37: Procedural assignment to a non-register gray_output is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:1660 - "C:/Xilinx/DOE/BINARYTOGRAY.v" Line 38: Procedural assignment to a non-register gray_output is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:1660 - "C:/Xilinx/DOE/BINARYTOGRAY.v" Line 39: Procedural assignment to a non-register gray_output is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:598 - "C:/Xilinx/DOE/BINARYTOGRAY.v" Line 21: Module <BINARYTOGRAY> ignored due to previous errors.
+Verilog file C:/Xilinx/DOE/BINARYTOGRAY.v ignored due to errors
